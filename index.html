@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="vh-100">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dice Spinner App</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body
+		class="m-5 p-5 vh-100 flex flex-col items-center justify-between relative"
+	>
+		<div
+			class="w-full border border-2 border-blue-400 border-solid flex flex-col items-center justify-center relative box-text-7xl"
+			style="height: 50vh"
+			id="top-section"
+		>
+			<div class="text-7xl" id="top-dice">1</div>
+			<div class="absolute bottom-10 text-xl" id="top-number">1</div>
+		</div>
+		<button
+			class="top-50 left-50 cursor-pointer bg-blue-400 rounded-3xl px-5 py-3 text-white"
+			id="spin-button"
+		>
+			Spin
+		</button>
+		<div
+			class="w-full border border-2 border-blue-400 border-solid flex flex-col items-center justify-center relative box-text-7xl"
+			style="height: 50vh"
+			id="bottom-section"
+		>
+			<div class="text-7xl" id="bottom-dice">1</div>
+			<div class="absolute bottom-10 text-xl" id="bottom-number">1</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
