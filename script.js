@@ -14,9 +14,9 @@ function spinDice() {
         }
     }
 
-    document.getElementById('top-dice').textContent = topDiceNumber;
+    document.getElementById('top-dice').src = "/assets/"+ topDiceNumber + ".png";
     document.getElementById('top-number').textContent = topDiceNumber;
-    document.getElementById('bottom-dice').textContent = bottomDiceNumber;
+    document.getElementById('bottom-dice').src = "/assets/"+bottomDiceNumber + ".png";
     document.getElementById('bottom-number').textContent = bottomDiceNumber;
 }
 
