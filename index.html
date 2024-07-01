@@ -5,48 +5,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>afroDice</title>
 		<link rel="shortcut icon" href="/assets/favicon.ico" />
-		<script src="https://cdn.tailwindcss.com"></script>
-		<style>
-			body {
-				background-image: url("/assets/background2.jpg");
-				background-position: center;
-				background-size: 25%;
-				background-repeat: repeat;
-			}
-
-			.fullHeight {
-				height: calc(var(--vh, 1vh) * 100);
-			}
-
-			.sectionHeight {
-				height: 45%;
-			}
-		</style>
+		<link rel="manifest" href="manifest.json" />
+		<link rel="stylesheet" href="/css/style.css" />
 	</head>
-	<body class="fullHeight m-0 flex flex-col items-center justify-evenly p-4">
+	<body class="fullHeight">
 		<section id="top-section">
-			<img
-				id="topDie"
-				src="/assets/diceUp.png"
-				class="opacity-90 rounded-xl"
-			/>
+			<img id="topDie" src="/assets/diceUp.png" />
 		</section>
 
-		<button
-			id="spinButton"
-			class="py-2 px-4 bg-blue-400 rounded-3xl text-white m-2"
-		>
-			SPIN
-		</button>
+		<button id="spinButton">SPIN</button>
 
 		<section id="bottom-section">
-			<img
-				id="bottomDie"
-				src="/assets/diceDown.png"
-				class="opacity-90 rounded-xl"
-			/>
+			<img id="bottomDie" src="/assets/diceDown.png" />
 		</section>
 
-		<script src="script.js"></script>
+		<script src="/js/app.js"></script>
 	</body>
 </html>
