@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" class="vh-100 box-border">
+<html lang="en" class="fullHeight">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dice Spinner App</title>
+		<title>afroDice</title>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<style>
+			body {
+				background-image: url("/assets/background2.jpg");
+				background-position: center;
+				background-size: 25%;
+				background-repeat: repeat;
+			}
+
+			.fullHeight {
+				height: calc(var(--vh, 1vh) * 100);
+			}
+
+			.sectionHeight {
+				height: 45%;
+			}
+		</style>
 	</head>
-	<body
-		class="m-5 p-5 vh-100 flex flex-col items-center justify-between relative box-border"
-	>
-		<div
-			class="container w-full border border-2 border-blue-400 border-solid flex flex-col items-center justify-center relative box-text-7xl box-border"
-			style="height: 50vh"
-			id="top-section"
-		>
-			<img class="h-auto max-w-full"  id="top-dice" src="/assets/diceUp.png"></img>
-			<div class="absolute bottom-10 text-xl" id="top-number">1</div>
-		</div>
+	<body class="fullHeight m-0 flex flex-col items-center justify-evenly p-4">
+		<section id="top-section">
+			<img
+				id="topDie"
+				src="/assets/diceUp.png"
+				class="opacity-90 rounded-xl"
+			/>
+		</section>
+
 		<button
-			class="top-50 left-50 cursor-pointer bg-blue-400 rounded-3xl m-2 px-5 py-3 text-white box-border"
-			id="spin-button" style="z-index: 1;"
+			id="spinButton"
+			class="py-2 px-4 bg-blue-400 rounded-3xl text-white m-2"
 		>
-			Spin
+			SPIN
 		</button>
-		<div
-			class="container w-full border border-2 border-blue-400 border-solid flex flex-col items-center justify-center relative box-text-7xl box-border"
-			style="height: 50vh"
-			id="bottom-section"
-		>
-			<img class="h-auto max-w-full" id="bottom-dice" src="/assets/diceDown.png"></img>
-			<div class="absolute bottom-10 text-xl" id="bottom-number">1</div>
-		</div>
+
+		<section id="bottom-section">
+			<img
+				id="bottomDie"
+				src="/assets/diceDown.png"
+				class="opacity-90 rounded-xl"
+			/>
+		</section>
+
 		<script src="script.js"></script>
 	</body>
 </html>
