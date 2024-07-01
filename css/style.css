@@ -27,19 +27,20 @@ img {
 }
 
 #spinButton {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	padding-left: 1.2rem;
+	padding-right: 1.2rem;
 	color: white;
-	background-color: rgb(96 165 250);
+	background-color: rgb(33, 59, 54);
 	border-radius: 1.5rem;
 	border: none;
 	font-weight: bold;
+	font-size: 1.2rem;
 	margin: 0.5rem;
 	cursor: pointer;
 }
 
 #spinButton:active {
-	background-color: rgb(59 130 246);
+	background-color: rgb(17, 26, 24);
 }
