@@ -1,7 +1,8 @@
 body {
-	background-image: url("/assets/background2.jpg");
+	background-image: url("/assets/android-chrome-512x512.png");
+	/* background-color: rgb(104, 235, 217); */
 	background-position: center;
-	background-size: 25%;
+	background-size: 15%;
 	background-repeat: repeat;
 	margin: 0;
 	display: flex;
@@ -27,20 +28,22 @@ img {
 }
 
 #spinButton {
-	padding-top: 0.8rem;
-	padding-bottom: 0.8rem;
-	padding-left: 1.2rem;
-	padding-right: 1.2rem;
-	color: white;
-	background-color: rgb(33, 59, 54);
-	border-radius: 1.5rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	padding-left: 0.1rem;
+	padding-right: 0.1rem;
+	color: rgb(0, 0, 0);
+	height: 3rem;
+	width: 3rem;
+	border-radius: 30%;
 	border: none;
-	font-weight: bold;
-	font-size: 1.2rem;
+	font-weight: bolder;
 	margin: 0.5rem;
 	cursor: pointer;
+	opacity: 1;
+	/* transition: all 500ms ease-in-out; */
 }
 
 #spinButton:active {
-	background-color: rgb(17, 26, 24);
+	opacity: 0.5;
 }
