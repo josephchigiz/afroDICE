@@ -22,7 +22,7 @@ section {
 	justify-content: center;
 }
 
-img {
+.dicePhase {
 	opacity: 0.9;
 	border-radius: 0.75rem;
 	width: 100%;
@@ -38,12 +38,9 @@ img {
 	height: 3rem;
 	width: 3rem;
 	border-radius: 30%;
-	border: none;
-	font-weight: bolder;
+	border: 2px solid white;
 	margin: 0.8rem;
 	cursor: pointer;
-	opacity: 1;
-	/* transition: all 500ms ease-in-out; */
 }
 
 #spinButton:active {
