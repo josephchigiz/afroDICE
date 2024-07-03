@@ -27,7 +27,7 @@ function rollDice() {
     let bottomRoll = getRandomDiceNumber();
 
     // add 20% chance for dice to be the same
-    if (Math.random() < 0.2 ) {
+    if (Math.random() < 0.3 ) {
         bottomRoll === topRoll;
     } else {
         //ensure dice numbers are unique
